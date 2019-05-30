@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This lab will give you a basic understanding of the Oracle Cloud Infrastructure Database as a Service offering and some of the capabilities around administration and database development.  Note that this workshop uses Oracle's Oracle Cloud Infrastructure (OCI) Database VM service, and not the legacy 'Classic' service or Bare Metal service.  
+This lab will give you a basic understanding of the Oracle Cloud Infrastructure Database as a Service (DBaaS) offering and some of the capabilities around administration and database development.  Note that this workshop uses Oracle's Oracle Cloud Infrastructure (OCI) Database VM service, and not the legacy 'Classic' service or Bare Metal service.  
 
-This lab will walk you through creating a new Database, and then have you connect into the Database instance using an ssh private key to familiarize yourself with command line administration. Next, you will connect to the database using SQLDeveloper and create a new user and a new sample table. You'll then back up the database to OCI Object Storage using RMAN, drop a table, and then restore from that backup.  **You must be off VPN to do this lab.**
+This lab will walk you through creating a new Database, and then have you connect into the Database instance using an ssh private key to familiarize yourself with command line administration. Next, you will connect to the database using SQLDeveloper and create a new sample table. You'll then back up the database to OCI Object Storage using RMAN, drop a table, and then restore from that backup.  **You must be off VPN to do this lab.**
 
 **Note:  It will be very helpful to have a notepad open as a holding place to copy and paste various items throughout all the labs.** 
 
@@ -116,6 +116,11 @@ The last network resource that we'll need to work on is a [Route Table](https://
 
 <details><summary>STEP 3:  Create our SSH Keys</summary>
 
+**NOTE: IF USING PREMADE WORKSHOP RESOURCES DOWNLOAD SSH KEYS [HERE](./SSH_Keys.zip)**
+**If you are using a Windows machine you will need to download an SSH client like PuTTY as described in the "Windows" section below**
+
+
+
 Generate SSH keys to be used later while launching an instance.
 
 #### MAC/LINUX 
@@ -146,7 +151,7 @@ Generate SSH keys to be used later while launching an instance.
 
 </details>
 
-<details><summary>STEP 4:  Launching our Database</summary>
+<details><summary>STEP 4:  Launch our Database</summary>
 
 We are now ready to [provision our DBaaS Instance](https://docs.cloud.oracle.com/iaas/Content/Database/Tasks/launchingDB.htm). Click the hamburger menu in the top left again, and select the "Bare Metal, VM and Exadata" option under Database. Once there, press "Launch DB System".
 
